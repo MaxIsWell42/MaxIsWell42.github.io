@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Got a lot from fullpage.js examples -->
+<!-- https://github.com/alvarotrigo/fullPage.js -->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Continuous Vertical scrolling - fullPage.js</title>
+	<meta name="author" content="Max Finn" />
+	<meta name="description" content="Personal Portfolio Site" />
+	<meta name="keywords"  content="Max Finn, developer, software engineer, backend, code"/>
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+</head>
+
+<body>
+    <ul id="menu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Who</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">What</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Where</a></li>
+    </ul>
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <h1>Max Finn</h1>
+            <p>Bridging the gap between problems and solutions, one line at a time.</p>
+            <img src="assets/maxGoGopher.png" alt="fullPage" style="width: 600px;height:500px"/>
+        </div>
+        <div class="section" id="section1">
+            <div class="intro">
+                <h1>Education and Experience</h1>
+                <p>Make School</p>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Contact Me!</h1>
+                <p>Github.com/MaxIsWell42</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="fullpage.js"></script>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        menu: '#menu',
+        continuousVertical: true,
+        afterLoad: function(anchorLink, index){
+                console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+            },
+            onLeave: function(index, nextIndex, direction){
+                console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+
+            },
+        });
+    </script>
+</body>
+
+</html>
