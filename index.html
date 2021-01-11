@@ -10,11 +10,14 @@
 	<meta name="author" content="Max Finn" />
 	<meta name="description" content="Personal Portfolio Site" />
 	<meta name="keywords"  content="Max Finn, developer, software engineer, backend, code"/>
-	<meta name="Resource-type" content="Document" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 	<link rel="stylesheet" type="text/css" href="fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="card.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -24,6 +27,8 @@
         <li data-menuanchor="3rdPage"><a href="#3rdPage">Where</a></li>
     </ul>
 
+
+    <!-- First Page -->
     <div id="fullpage">
         <div class="section " id="section0">
             <div class="slide" id="slide1">
@@ -52,14 +57,56 @@
         </div>
 
 
+        <!-- Second Page -->
         <div class="section" id="section1">
-            <div class="intro">
-                <h1>Projects</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada ac turpis vitae volutpat. In malesuada id leo nec efficitur. Aliquam tincidunt mollis dolor. Donec elementum, felis non ultrices posuere, neque neque facilisis nisl, vitae scelerisque ex risus ac sem. Aenean velit arcu, accumsan vel mauris non, vestibulum blandit quam. Maecenas sed arcu sit amet eros maximus pretium ac vitae ex. Quisque congue dignissim pellentesque. Nunc lobortis consequat mi, id luctus lectus fermentum sit amet. Fusce condimentum metus neque, malesuada egestas mauris tincidunt vitae. Duis tristique lacus velit, hendrerit sollicitudin ante condimentum vel. Nulla fringilla massa vitae feugiat tempor. Pellentesque purus diam, fermentum ut finibus a, condimentum eu metus. Nullam pellentesque dui sed semper elementum. Ut finibus nulla at semper vulputate.
+            <h1>Projects</h1>
+            <div class='container'>
+                <div class='card'>
+                    <img src='./assets/daisy.jpg'>
+                    <div class='card-body'>
+                        <div class='card-text'>
+                            <h4 class="card-title">GoSniffPackets</h4>
+                        <hr class="card-hr">
+                        <p class="card-subtitle">Python, Pillow</p>
+                        <hr class="card-hr">
+                            <p class="card-subtitle">Designed to alert the user to possible third party psychological influence through the use of the colors</p>
+                        </div>
+                    <button>Repository</button>
+                    </div>
+                </div>
 
-                    Phasellus ut sapien bibendum quam mollis mattis. Praesent sagittis velit nunc, vitae lobortis metus interdum eu. Proin magna est, maximus at magna at, laoreet lacinia magna. Aenean porttitor congue vehicula. Ut mattis, tortor eget venenatis vulputate, massa neque feugiat magna, eget tincidunt erat felis sed lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin nisl diam, maximus nec gravida at, volutpat non leo. Fusce interdum turpis eget massa dictum, ac ornare ex lobortis. In sit amet elementum velit. In rhoncus augue faucibus bibendum fermentum.</p>
+                <div class='card'>
+                    <img src='./assets/daisy.jpg'>
+                    <div class='card-body'>
+                        <div class='card-text'>
+                            <h4>Gini Tree Game</h4>
+                        <hr class="card-hr">
+                        <p class="card-subtitle">Python, Pillow</p>
+                        <hr class="card-hr">
+                            <p class="card-subtitle">Designed to alert the user to possible third party psychological influence through the use of the colors</p>
+                        </div>
+                    <button>Repository</button>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <img src='./assets/daisy.jpg'>
+                    <div class='card-body'>
+                        <div class='card-text'>
+                            <h4>Spectrum Spectre</h4>
+                        <hr class="card-hr">
+                        <p class="card-subtitle">Python, Pillow</p>
+                        <hr class="card-hr">
+                            <p class="card-subtitle">Designed to make the user aware of possible third party psychological influence through the use of the colors</p>
+                        </div>
+                    <button style="margin-bottom: 1px;">Repository</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <!-- Third Page -->
         <div class="section" id="section2">
             <div class="intro">
                 <h1>Contact Me!</h1>
