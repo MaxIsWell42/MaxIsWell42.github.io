@@ -18,6 +18,10 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="card.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- video::-webkit-media-controls {
+        display:none !important;
+    } -->
 </head>
 
 <body>
@@ -30,18 +34,23 @@
 
     <!-- First Page -->
     <div id="fullpage">
-        <div class="section " id="section0">
+        <div class="section" id="section0">
             <div class="slide" id="slide1">
-                <div class="intro">
-                    <h1>Max Finn</h1>
-                    <p>
-                        Software Developer
-                    </p>
-                    <img src="assets/maxGoGopher.png" alt="fullPage" class="selfImage" style="width: 600px;height:500px"/>
-                </div>
-                <div class="arrow-label">
-                    <p>Credentials</p>
-                    <p>Extras</p>
+                <video id="myVideo" loop muted data-autoplay>
+                    <source src="./assets/blackWhiteparticles.mp4" type="video/mp4">
+                </video>
+                <div class="layer">
+                    <div>
+                        <h1>Max Finn</h1>
+                        <p>
+                            Software Developer
+                        </p>
+                        <img src="assets/maxGoGopher.png" alt="me" class="selfImage" style="width: 600px;height:500px"/>
+                        <div class="arrow-label">
+                            <p>Credentials</p>
+                            <p>Extras</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         
@@ -59,7 +68,7 @@
 
         <!-- Second Page -->
         <div class="section" id="section1">
-            <h1>Projects</h1>
+            <h1 style="color: #f1f1f1">Projects</h1>
             <div class='container'>
                 <div class='card'>
                     <img src='./assets/daisy.jpg'>
@@ -120,7 +129,7 @@
 
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        sectionsColor: ['#1bbc9b', '#484747', '#7BAABE', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage'],
         menu: '#menu',
         continuousVertical: true,
