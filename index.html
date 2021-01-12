@@ -32,8 +32,8 @@
     </ul>
 
 
-    <!-- First Page -->
     <div id="fullpage">
+        <!-- First Page -->
         <div class="section" id="section0">
             <div class="slide" id="slide1">
                 <video id="myVideo" loop muted data-autoplay>
@@ -54,52 +54,75 @@
                 </div>
             </div>
         
+            <!-- Icons from 8Icon -->
             <div class="slide" id="slide2">
-                <h1>Education and Experience</h1>
-                <img src="" alt="Education and experience" id="iphone-two" />
+                <h1>Check out my resume:</h1>
+                <a href="#">
+                    <img src="./assets/icons8-graduation-cap-64.png" alt="Resume" id="iphone-two" />
+                </a>
             </div>
 
             <div class="slide" id="slide3">
                 <h1>Extras</h1>
-                <img src="" alt="Education and experience" id="iphone-two" />
+                <img src="./assets/code-day-logo.png" alt="Other events" id="iphone-two" style="height: 60px; width: 270px"/>
             </div>
         </div>
 
 
         <!-- Second Page -->
         <div class="section" id="section1">
-            <h1 style="color: #f1f1f1">Projects</h1>
+            <h1 class="project-title">Projects</h1>
             <div class='container'>
                 <div class='card'>
-                    <img src='./assets/daisy.jpg'>
+                    <img src='./assets/bloodhound-logo.webp'>
                     <div class='card-body'>
                         <div class='card-text'>
-                            <h4 class="card-title">GoSniffPackets</h4>
+                            <h4 class="card-title">PySniffer</h4>
                         <hr class="card-hr">
-                        <p class="card-subtitle">Python, Pillow</p>
+                        <p class="card-subtitle">Python, Sockets, Kali Linux, VM</p>
                         <hr class="card-hr">
-                            <p class="card-subtitle">Designed to alert the user to possible third party psychological influence through the use of the colors</p>
+                            <p class="card-subtitle">A simple packet sniffer</p>
                         </div>
-                    <button>Repository</button>
+                        <a href="https://github.com/MaxIsWell42/PySniffer">
+                            <button>Repository</button>
+                        </a>
                     </div>
                 </div>
 
                 <div class='card'>
-                    <img src='./assets/daisy.jpg'>
+                    <img src='./assets/tree_code.png'>
                     <div class='card-body'>
                         <div class='card-text'>
                             <h4>Gini Tree Game</h4>
                         <hr class="card-hr">
-                        <p class="card-subtitle">Python, Pillow</p>
+                        <p class="card-subtitle">Python, Trees</p>
                         <hr class="card-hr">
-                            <p class="card-subtitle">Designed to alert the user to possible third party psychological influence through the use of the colors</p>
+                            <p class="card-subtitle">Calculates the best question to ask to guess what animal you're thinking of.</p>
                         </div>
-                    <button>Repository</button>
+                        <a href="https://github.com/omarsagoo/animal-classifier">
+                            <button>Repository</button>
+                        </a>
                     </div>
                 </div>
 
                 <div class='card'>
-                    <img src='./assets/daisy.jpg'>
+                    <img src='./assets/discordgologo.png'>
+                    <div class='card-body'>
+                        <div class='card-text'>
+                            <h4>Meme Machine Bot</h4>
+                        <hr class="card-hr">
+                        <p class="card-subtitle">Golang</p>
+                        <hr class="card-hr">
+                            <p class="card-subtitle">Create memes, from the comfort your Discord chat</p>
+                        </div>
+                        <a href="https://github.com/MaxIsWell42/MemeMachineBot">
+                            <button>Repository</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <img src='./assets/spectrumSpectre.png'>
                     <div class='card-body'>
                         <div class='card-text'>
                             <h4>Spectrum Spectre</h4>
@@ -108,7 +131,25 @@
                         <hr class="card-hr">
                             <p class="card-subtitle">Designed to make the user aware of possible third party psychological influence through the use of the colors</p>
                         </div>
-                    <button style="margin-bottom: 1px;">Repository</button>
+                        <a href="https://github.com/MaxIsWell42/SpectrumSpectrePy">
+                            <button>Repository</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <img src='./assets/learn-a-new-language-flags-1068x713.jpg'>
+                    <div class='card-body'>
+                        <div class='card-text'>
+                            <h4>Fluent</h4>
+                        <hr class="card-hr">
+                        <p class="card-subtitle">Project Mananger, IOS</p>
+                        <hr class="card-hr">
+                            <p class="card-subtitle">Get live translation of the things you text to learn a new language.</p>
+                        </div>
+                        <a href="https://github.com/xingY97/Fluent">
+                            <button>Repository</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -118,8 +159,18 @@
         <!-- Third Page -->
         <div class="section" id="section2">
             <div class="intro">
-                <h1>Contact Me!</h1>
-                <p>Github.com/MaxIsWell42</p>
+                <h1>Check out my other stuff/Get in contact!</h1>
+            </div>
+            <div class="contact-logos">
+                <a href="https://github.com/MaxIsWell42">
+                    <img src="./assets/github-logo.png">
+                </a>
+                <a href="https://www.linkedin.com/in/maxwell-finn-6a2112182/">
+                    <img src="./assets/linkedinLogo.png">
+                </a>
+                <a href="https://maxfin13.medium.com/">
+                    <img src="./assets/1200px-Medium_logo_Monogram.svg.png">
+                </a>
             </div>
         </div>
     </div>
@@ -129,7 +180,7 @@
 
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#1bbc9b', '#484747', '#7BAABE', 'whitesmoke', '#ccddff'],
+        sectionsColor: ['#1bbc9b', '#484747', '#F3C86C', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage'],
         menu: '#menu',
         continuousVertical: true,

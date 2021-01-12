@@ -86,28 +86,6 @@ p{
     justify-content: space-between;
     margin: 10px;
 }
-.card-position{
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; */
-}
-
-#myVideo{
-    /* position: absolute; */
-    right: 0;
-    bottom: 0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-color: black; /* in case the video doesn't fit the whole page*/
-    /* background-image: our video; */
-    background-position: center center;
-    background-size: contain;
-    object-fit: cover; /*cover video background */
-    z-index:3;
-}
 .layer{
     position: absolute;
     z-index: 4;
@@ -123,11 +101,40 @@ p{
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-
 .layer h1{
     color: #656565;
 }
-
+.project-title{
+    color: #f1f1f1;
+    font-family: Verdana;
+}
+.contact-logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 5px
+}
+.contact-logos img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+#myVideo{
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    /* background-image: our video; */
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+    z-index:3;
+}
 #menu li {
 	display:inline-block;
 	margin: 10px;
@@ -169,10 +176,4 @@ p{
 	width: 100%;
 	padding: 0;
 	margin:0;
-}
-.twitter-share-button{
-	position: fixed;
-	z-index: 99;
-	right: 149px;
-	top: 9px;
 }
