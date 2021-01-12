@@ -3,6 +3,8 @@ https://maxiswell42.github.io/
 
 -----
 
+![Alt text](./assets/maxGoGopher.png?raw=true "MaxGOpher")
+
 Get in touch: https://www.linkedin.com/in/maxwell-finn-6a2112182/
 
 **Stack:**
